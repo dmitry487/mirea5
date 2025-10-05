@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>МИРЭА — Flexbox макеты</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">МИРЭА</div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Открыть меню">
+    <label for="menu-toggle" class="burger" aria-hidden="true">
+      <span class="line"></span>
+    </label>
+    <nav class="main-nav" aria-label="Главное меню">
+      <a href="#home">Главная</a>
+      <a href="#about">Об университете</a>
+      <a href="#services">Абитуриентам</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <h1>МИРЭА — Российский технологический университет</h1>
+      <p>Современное инженерное и IT‑образование, наука и инновации.</p>
+      <div class="cta">
+        <a class="btn primary" href="#services">Поступить</a>
+        <a class="btn" href="#about">Узнать больше</a>
+      </div>
+    </section>
+    <section class="layout-demo">
+      <h2>Рисунок 1 — Перекомпоновка Flexbox</h2>
+      <div class="desktop-mobile">
+        <div class="area area-a">
+          <h3>О университете</h3>
+          <p>МИРЭА — ведущий технологический университет России. Мы готовим инженеров, разработчиков и исследователей, сочетая фундаментальные знания с практикой.</p>
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200" alt="Главное здание университета">
+        </div>
+        <div class="area area-b">
+          <h3>Направления подготовки</h3>
+          <ul>
+            <li>Информационные технологии и программная инженерия</li>
+            <li>Кибербезопасность и криптография</li>
+            <li>Робототехника и мехатроника</li>
+            <li>Био- и нанотехнологии</li>
+          </ul>
+        </div>
+        <div class="area area-c">
+          <h3>Наука и проекты</h3>
+          <p>Студенты участвуют в хакатонах, создают стартапы, публикуют статьи и выигрывают гранты. Доступны современно оснащённые лаборатории.</p>
+          <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200" alt="Лаборатория и научное оборудование">
+        </div>
+        <div class="area area-d">
+          <h3>Абитуриентам</h3>
+          <p>Приёмная кампания открыта. Следите за сроками, перечнем документов и минимальными баллами. Есть бюджетные места и скидки.</p>
+          <a class="btn primary" href="#services">Подать заявку</a>
+        </div>
+        <div class="area area-e">
+          <h3>Студенческая жизнь</h3>
+          <p>Спортивные секции, творческие коллективы, студсовет, волонтёрство и международные обмены.</p>
+          <img src="https://images.unsplash.com/photo-1518600506278-4e8ef466b810?w=1200" alt="Студенты на кампусе">
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-demo">
+      <h2>Меню‑бургер (CSS) — демонстрация</h2>
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <div class="phone-header">МИРЭА
+            <label for="menu-toggle" class="burger small"><span class="line"></span></label>
+          </div>
+          <div class="phone-content">Contents</div>
+        </div>
+        <nav class="overlay-nav" aria-label="Мобильное меню">
+          <button class="close" aria-label="Закрыть меню">×</button>
+          <a href="#home">Главная</a>
+          <a href="#about">Об университете</a>
+          <a href="#services">Абитуриентам</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+      </div>
+      <p class="note">Демонстрация работает без JavaScript: раскрытие меню выполнено с помощью <code>:checked</code>, <code>visibility</code>, <code>opacity</code> и <code>transform</code>.</p>
+    </section>
+
+    <section class="gallery" id="about">
+      <h2>Галерея кампуса МИРЭА</h2>
+      <div class="grid">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?w=1200" alt="Главный корпус, фасад">
+          <figcaption>Главный корпус</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1523580846011-6f85a38c8c76?w=1200" alt="Аудитория и студенты">
+          <figcaption>Занятия в аудиториях</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200" alt="Лаборатория и оборудование">
+          <figcaption>Лаборатории и оборудование</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?w=1200" alt="Библиотека университета">
+          <figcaption>Библиотека</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1523580846011-9b72d1e1b34c?w=1200" alt="Студенческая жизнь, кампус">
+          <figcaption>Студенческая жизнь</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1519455953755-af066f52f1ea?w=1200" alt="Стадион и спорт">
+          <figcaption>Спорт и активити</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="cards" id="services">
+      <h2>Новости и жизнь кампуса</h2>
+      <div class="cards-grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200" alt="Хакатон студенты за ноутбуками">
+          <div class="card-body">
+            <h3>Хакатон для абитуриентов</h3>
+            <p>Открытый хакатон по искусственному интеллекту и робототехнике. Участие бесплатно, регистрация до 20 октября.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1523580846011-23a5f3b5b3ab?w=1200" alt="Лаборатория кибербезопасности">
+          <div class="card-body">
+            <h3>Новая лаборатория кибербезопасности</h3>
+            <p>Открыли практический центр по анализу трафика и тестированию на проникновение на базе института ИТ.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1518600506278-4e8ef466b810?w=1200" alt="Выпускники бросают шапочки">
+          <div class="card-body">
+            <h3>Выпуск 2025</h3>
+            <p>Поздравляем выпускников! Фотоотчёт с церемонии и ссылки на записи трансляций доступны на сайте.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">© 2025 Flexbox практика</footer>
+
+  <script>document.querySelector(".overlay-nav .close").addEventListener("click",()=>{document.getElementById("menu-toggle").checked=false;});</script>
+</body>
+</html>
